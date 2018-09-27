@@ -1,0 +1,1511 @@
+<html>
+    <head>
+        
+    
+       <img src="logo.png" style="width:120px;height:120px;  "  >
+              <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       <script src="https://www.w3schools.com/lib/w3.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-firestore.js"></script>
+        <script type="text/javascript">
+          
+            function codeAddress() 
+            {
+                
+                      db.collection("studentForms").get()
+                       .then(function(querySnapshot) {
+                       querySnapshot.forEach(function(doc) {
+                           db.collection('studentForms').doc(doc.id).update({
+                               Print:"NO",
+                           });
+                       });
+                   });
+                
+             }
+        
+
+  window.onload = codeAddress;
+           
+       </script> 
+      <style>
+        body{
+    background-color: darkgreen;
+    font-family: ubuntu;
+}
+
+            .in1 {
+    width: 9%;
+    padding: 8px 8px;
+      
+    margin: 5px 2;
+         text-align: center;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius:8px;
+         
+    box-sizing: border-box;
+}
+          
+           .in2 {
+    width: 38%;
+    padding: 8px 12px;
+    margin: 8px 0;
+         text-align: center;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+         
+    box-sizing: border-box;
+}
+                    
+           .in3 {
+    width: 60%;
+    padding: 8px 12px;
+    margin: 8px 0;
+         text-align: center;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+         
+    box-sizing: border-box;
+}
+         
+           .in4 {
+    width: 17%;
+    padding: 8px 8px;
+      
+    margin: 5px 2;
+         text-align: center;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius:8px;
+         
+    box-sizing: border-box;
+}
+           .in5 {
+    width: 11%;
+    padding: 8px 8px;
+      
+    margin: 5px 2;
+         text-align: center;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius:8px;
+         
+    box-sizing: border-box;
+}
+     .in6 {
+    width: 27%;
+    padding: 8px 8px;
+      
+    margin: 5px 2;
+         text-align: center;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius:8px;
+         
+    box-sizing: border-box;
+}   
+           .in7 {
+    width: 18%;
+    padding: 8px 8px;
+      
+    margin: 5px 2;
+         text-align: center;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius:8px;
+         
+    box-sizing: border-box;
+}   
+           .in8{
+    width: 3%;
+    padding: 8px 8px;
+      
+    margin: 5px 2;
+         text-align: center;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius:8px;
+         
+    box-sizing: border-box;
+}   
+            .in9{
+    width: 38%;
+    padding: 8px 8px;
+      
+    margin: 5px 2;
+         text-align: center;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius:8px;
+         
+    box-sizing: border-box;
+}   
+              .in10{
+    width: 19%;
+    padding: 8px 8px;
+      
+    margin: 5px 2;
+         text-align: center;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius:8px;
+         
+    box-sizing: border-box;
+}   
+              .in11{
+    width: 19%;
+    padding: 8px 8px;
+      
+    margin: 5px 2;
+         text-align: center;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius:8px;
+         
+    box-sizing: border-box;
+}   
+          
+h1{
+    color: #fff;
+    font-size: 64px;
+    letter-spacing: 2px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.content{
+    background: #fff;
+    max-width: 1250px;
+    margin: 30px auto;
+    padding:  20px 30px;
+    border-radius: 10px 120px 10px 10px;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    padding: 20px;
+    background: #f6f6f6;
+     
+    color: #008000;
+    position: relative;
+    border-bottom: 8px solid #e6e6e6;
+    height:156px;
+    
+     
+}
+
+ 
+li span{
+    display: block;
+}
+li span:nth-child(1){
+    font-size: 25px;
+  
+      
+    font-weight: bold;
+    color: #008000;
+}
+
+li span:nth-child(2){
+    font-size: 15px;
+    margin-top: 6px;
+    
+    color: #000000;
+}
+li span:nth-child(3){
+    font-size: 15px;
+    margin-top: 6px;
+    color: #000000;
+}
+          li span:nth-child(4){
+    font-size: 15px;
+    margin-top: 6px;
+    color: #000000;
+}
+          li span:nth-child(5){
+    font-size: 15px;
+    margin-top: 6px;
+    color: #000000;
+}
+          li span:nth-child(6){
+    font-size: 15px;
+    margin-top: 6px;
+    color: #000000;
+}
+          li span:nth-child(7){
+    font-size: 15px;
+    margin-top: 6px;
+    color: #000000;
+}
+li span:nth-child(8){
+    font-size: 15px;
+    margin-top: 6px;
+    color: #000000;
+}
+      
+ 
+ th, td {
+    padding: 8px;
+    text-align: left;
+        border: 3px solid darkgreen;
+    
+    border-bottom: 4px solid #000000;
+}
+
+.tr1:hover {background-color:silver;}
+
+table {
+ 
+    width: 100%;
+}
+
+ .labela:hover
+          {
+              color: white;
+              background-color: darkgreen;
+          }
+          .labela
+          {
+        border:10;
+    background-color:bisque;
+    border-radius: 15px;
+    padding: 4px;
+ 
+          }
+  
+         
+form input{
+    float: left;
+    width: 38%;
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid #eee;
+    margin: 0 1%;
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+form input:focus{
+    outline: none;
+    border-bottom: 3px solid #88236f;
+    padding-bottom: 8px;
+     
+}
+
+form:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+button{
+    border:6;
+    background-color:ghostwhite;
+    border-radius: 25px;
+    padding: 4px;
+    width: 9%;
+  
+    box-shadow: -1px 0px 1px rgba(0,0,0,0.1);
+    font-weight: bold;
+    font-family: ubuntu;
+    letter-spacing: 3px;
+    
+
+    cursor:  pointer;
+}
+        
+            button:hover,   button:focus
+          {
+               background-color: dimgrey;
+              color:white;
+              
+          }
+          
+.buttona{
+    border:6;
+    background-color:bisque ;
+    border-radius: 25px;
+    padding: 4px;
+    width: 9%;
+   right:0;
+    box-shadow: -1px 0px 1px rgba(0,0,0,0.1);
+    font-weight: bold;
+    font-family: ubuntu;
+    letter-spacing: 1px;
+    
+    cursor:  pointer;
+}
+        
+          
+          
+     .buttona:hover, .buttona:focus
+          {
+               background-color: #3e8e41;
+              color:white;
+              
+          }
+          
+          
+          
+ 
+          
+    .dropbtn {
+     border:6;
+    background-color:bisque ;
+    border-radius: 25px;
+    padding: 4px;
+    width: 9%;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+       color:white;
+}
+
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width:70px;
+        border-radius: 28px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 1040;
+    z-index: 1;
+}
+         
+.dropdown-content a:hover {background-color: darkgray;}
+.dropdown-content a {
+    color: black;
+    padding: 8px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+          
+          
+          
+           .dropdown-content2{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width:70px;
+        border-radius: 28px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right:830;
+    z-index: 1;
+}
+ 
+.dropdown-content2 a:hover {background-color: darkgray;}
+.dropdown-content2 a {
+    color: black;
+  padding: 8px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown2 a:hover {background-color: #ddd;}
+          
+           
+           .dropdown-content3{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width:70px;
+        border-radius: 28px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right:940;
+    z-index: 1;
+}
+ 
+.dropdown-content3 a:hover {background-color: darkgray;}
+.dropdown-content3 a {
+    color: black;
+  padding: 8px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown3 a:hover {background-color: #ddd;}
+          
+.show {display: block;}
+          
+          
+          
+        </style>
+            
+    </head>
+  
+       <body>
+               <!-- Modal -->
+           
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="mtitle"> </h4>
+        </div>
+        <div class="modal-body" id ="mbody" style = 'white-space: pre;'>
+          <p>This is a small modal.</p>
+        </div>
+        <div class="modal-footer" id = "footer">
+          <label class = "labela"   id = "btnmodal1"></label>
+              <label class = "labela"  id = "btnmodal2"></label>
+        </div>
+      </div>
+    </div>
+  </div>
+       <h1>UDM Registrar Database</h1>
+
+        <div class="content">
+
+            <form id="add-cafe-form"></form>
+            <button class="buttona" onclick="btn1()">Applicants</button>
+            
+     <button onclick="myFunction()" class="dropbtn">Admission</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a onclick="btn2()">SHS</a>
+    <a onclick="btn3()">COLLEGE</a>
+    
+  </div>
+                <button onclick="myFunction2()" class="dropbtn">Clearance</button>
+  <div id="myDropdown2" class="dropdown-content3" onclick="myFunction2()">
+    <a onclick = "showSHS2()">SHS</a>
+    <a onclick = "show1st2()">COLLEGE</a>
+    
+  </div>
+            <button onclick="myFunction1()" class="dropbtn">Students</button>
+  <div id="myDropdown1" class="dropdown-content2">
+    <a onclick = "showSHS()">SHS</a>
+    <a onclick = "show1st()">COLLEGE</a>
+    
+  </div>
+             <button class="buttona" onclick="btn4()">Schedules</button>
+
+            <br>
+            <br>
+            <ul id="cafe-list" >
+              Sort By:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                <select id ="sortBy1"  class="in5" onchange="filterSched1()" >
+                <option>ID#</option>
+                <option>School Type</option>
+                <option>Name</option>
+                <option>Address</option>
+                <option>E-mail</option>
+                <option>Phone</option>
+             
+            </select>    
+                Filter Search:<input type="text" class="in2" id="myInput1" onkeyup="filterSched1()">            
+    <table id="tableapp">
+        <tr>
+            <th>ID#</th>
+            <th>School Type</th>
+            <th>Name</th> 
+            <th>Address</th>
+            <th>E-mail</th>
+            <th>Phone</th>    
+        </tr> 
+    </table>
+            </ul>
+            <ul id="cafe-list2" hidden="">
+                         Sort By:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                <select id ="sortBy2"  class="in5" onchange="filterSched2()" >
+                <option>ID#</option>
+                <option>Batch</option>
+                <option>School Type</option>
+                <option>Name</option>
+            
+             
+            </select>    
+                Filter Search:<input type="text" class="in2" id="myInput2" onkeyup="filterSched2()">     
+             <table id="tableshs">
+        <tr>
+            <th>ID#</th>
+            <th>Batch</th>
+            <th>School Type</th> 
+            <th>Name</th>
+             
+        </tr> 
+    </table>
+                </ul>
+                <ul id="cafe-list3" hidden="">
+               Sort By:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                <select id ="sortBy3"  class="in5" onchange="filterSched3()" >
+                <option>ID#</option>
+                <option>Batch</option>
+                <option>School Type</option>
+                <option>Name</option>
+            
+             
+            </select>    
+                Filter Search:<input type="text" class="in2" id="myInput3" onkeyup="filterSched3()">    
+             <table id="tablecol">
+        <tr>
+            <th>ID#</th>
+            <th>Batch</th>
+            <th>School Type</th> 
+            <th>Name</th>
+             
+        </tr> 
+    </table>
+            </ul>
+       
+             <ul id="year1st" hidden="">
+                   Sort By:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                <select id ="sortBy4"  class="in5" onchange="filterSched4()" >
+                <option>ID#</option>
+                <option>Name</option>
+                <option>Section</option>
+                <option>College</option>
+                <option>Program</option>
+                <option>Year</option>
+                <option>Phone#</option>
+             
+            </select>    
+                Filter Search:<input type="text" class="in2" id="myInput4" onkeyup="filterSched4()">    
+        <table id="table1styear">
+            <tr>
+                <th>ID#</th>
+                <th>Name</th>
+                <th>Section</th>
+                <th>College</th>
+                <th>Program</th>
+                <th>Year</th>
+                <th>Phone#</th>
+   
+            </tr> 
+        </table>             
+     </ul>   
+                    <ul id="shsyear" hidden="">
+                             Sort By:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                <select id ="sortBy5"  class="in5" onchange="filterSched5()" >
+                <option>ID#</option>
+                <option>Name</option>
+                <option>Section</option>
+                <option>Program</option>
+                <option>Year</option>
+                <option>Phone#</option>
+             
+            </select>    
+                Filter Search:<input type="text" class="in2" id="myInput5" onkeyup="filterSched5()"> 
+        <table id="tableshsyear">
+                
+            <tr>
+                <th>ID#</th>
+                <th>Name</th>
+                <th>Section</th>
+                <th>Program</th>
+                <th>Year</th>
+                <th>Phone#</th>
+   
+            </tr> 
+        </table>             
+     </ul>  
+            
+            
+            
+             <ul id="clryear1st" hidden="">
+                         Sort By:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                <select id ="sortBy6"  class="in5" onchange="filterSched6()" >
+                <option>ID#</option>
+                <option>Name</option>
+                <option>Section</option>
+                <option>College</option>
+                <option>Program</option>
+                <option>Year</option>
+                <option>Phone#</option>
+             
+            </select>    
+                Filter Search:<input type="text" class="in2" id="myInput6" onkeyup="filterSched6()"> 
+        <table id="tableclr1styear">
+            <tr>
+                <th>ID#</th>
+                <th>Name</th>
+                <th>Section</th>
+                <th>College</th>
+                <th>Program</th>
+                <th>Year</th>
+                <th>Phone#</th>
+   
+            </tr> 
+        </table>             
+     </ul>   
+                    <ul id="clrshsyear" hidden="">
+                             Sort By:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                <select id ="sortBy7"  class="in5" onchange="filterSched7()" >
+                <option>ID#</option>
+                <option>Name</option>
+                <option>Section</option>
+ 
+                <option>Program</option>
+                <option>Year</option>
+                <option>Phone#</option>
+             
+            </select>    
+                Filter Search:<input type="text" class="in2" id="myInput7" onkeyup="filterSched7()"> 
+        <table id="tableclrshsyear">
+            <tr>
+                <th>ID#</th>
+                <th>Name</th>
+                <th>Section</th>
+                <th>Program</th>
+                <th>Year</th>
+                <th>Phone#</th>
+   
+            </tr> 
+        </table>             
+     </ul>  
+                             <ul id="sectionsched" hidden>
+ 
+                 <br>
+                Section:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  
+                <select id ="secselect" class="in5" size = "1" onchange="subjChange()">
+                       <option>ABM</option>
+                    <option>STEM</option>
+                    <option>HUMSS</option>
+                   <option>GA</option>
+                    <option>CRIM</option>
+                    <option>CHK</option>
+                    <option>PY</option>
+                    <option>MC</option>
+                    <option>MT</option>
+                    <option>PA</option>
+                    <option>EK</option>
+                    <option>CO</option>
+                    <option>IT</option>
+                 
+                </select>
+                        -    <input type="text" onkeypress="return isNumberKey(event)" class="in1"maxlength="2" id="subjyearsem">
+                        
+                         Year:  &nbsp;
+             <select id ="secsubjyear"  class="in5" >
+                    <option>Grade 11</option>
+                    <option>Grade 12</option>
+              
+                   
+               
+            </select>
+                          Sem:  &nbsp;
+             <select id ="secsubjsem"  class="in5" >
+                <option>1st</option>
+                <option>2nd</option>
+            </select>   
+                 <br>
+          Subject Name: 
+                <input type="text"  class="in2" id="subjnametxt">
+            <br>
+          Subject Code: 
+                <input type="text"   class="in1"   id="subjcodetxt" oninput="uppercase2()">
+          Subject Units:
+                <input type="text" onkeypress="return isNumberKey(event)" class="in1"maxlength="1" id="subjunittxt">
+        
+        
+         Time: 
+                <input type="text"  onkeypress="return isNumberKey(event)" class="in1" maxlength="2" id="sectime1" value = "09" onfocusout="sectimeout()" >
+            :
+             <input type="text"  onkeypress="return isNumberKey(event)" class="in1" maxlength="2" id="sectime2" value = "59" onfocusout="sectimeout2()">
+           
+             <select id ="sectimeAMPM"  class="in1" >
+                <option>AM</option>
+                <option>PM</option>
+            </select>
+            TO
+            
+                <input type="text"  onkeypress="return isNumberKey(event)" class="in1" maxlength="2" id="sectime3" value = "09" onfocusout="sectimeout4()" >
+            :
+             <input type="text"  onkeypress="return isNumberKey(event)" class="in1" maxlength="2" id="sectime4" value = "59" onfocusout="sectimeout5()">
+           
+             <select id ="sectimeAMPM2"  class="in1" >
+                <option>AM</option>
+                <option>PM</option>
+            </select>                
+              <br>            
+          Room: &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+            <input type="text" class="in1" id="subjroomtxt">                    
+            Day: &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+            <input type="text"  placeholder="M,T,W,TH,F,S"class="in1" id="subjdaytxt" onkeypress="return isDayKey(event)" oninput="uppercase()"> 
+                        
+      
+        &nbsp;&nbsp;  <button class="button" onclick="subjFunction()" id ="subjproc">Proceed</button>
+        
+             &nbsp;&nbsp;  <button class="button" onclick="subjsaveFunction()" id ="subjsave" hidden>Save Changes</button>
+                 &nbsp;&nbsp;  <button class="button" onclick="subjcnlFunction()" id ="subjedit" hidden >Cancel</button>
+                        
+                        
+            <br>
+            <label style = "font-size: 30;">Filtering Section</label>
+                        <br>
+                Sort By: &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                <select id ="sortBy"  class="in5" onchange="filterSched()" >
+                <option>Subject Code</option>
+                <option>Subject Name</option>
+                <option>Units</option>
+                <option>Day</option>
+                <option>Time</option>
+                <option>Room</option>
+                <option>Section</option>   
+                  <option>Sem</option>
+                <option>Year</option>     
+            </select>    
+                 Search:<input type="text" class="in2" id="myInput" onkeyup="filterSched()">            
+          
+              <table id="tablesec" >
+            <tr class = "tra">
+         
+            <th>Code</th>
+            <th>Name</th>
+            <th>Units</th>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Room</th>
+            <th>Section</th>
+                 <th>Sem</th>
+            <th>Year</th>
+            </tr>
+            </table>
+      
+        </ul>
+        </div>
+
+        <script>
+            // Initialize Firebase
+           var config = {
+    apiKey: "AIzaSyDINKtjCvZS49qnG7MxT-5_auIA_q_vV4o",
+    authDomain: "udmenrollment.firebaseapp.com",
+    databaseURL: "https://udmenrollment.firebaseio.com",
+    projectId: "udmenrollment",
+    storageBucket: "udmenrollment.appspot.com",
+    messagingSenderId: "784741931841"
+  };
+            firebase.initializeApp(config);
+            
+            db.settings({ timestampsInSnapshots: true }); 
+        </script>
+        <script src="app.js"></script>
+    
+          <script>
+              
+              
+              
+        function btn1()
+              {
+                  var elem1 = document.getElementById('cafe-list');
+                  var elem2 = document.getElementById('cafe-list2');
+                  var elem3 = document.getElementById('cafe-list3');
+                  var elem4 = document.getElementById('year1st');
+                  var elem5 = document.getElementById('shsyear');
+                  var elem6 = document.getElementById('clryear1st');
+                  var elem7 = document.getElementById('clrshsyear');
+                  var elem8 = document.getElementById('sectionsched'); 
+                   elem8.style.display = "none";
+                    elem1.style.display = "block";
+                    elem2.style.display = "none";
+                    elem3.style.display = "none";
+                   elem4.style.display = "none";
+                   elem5.style.display = "none";
+                  elem6.style.display = "none";
+                   elem7.style.display = "none";
+              }
+              
+         function btn2()
+              {
+            var elem1 = document.getElementById('cafe-list');
+            var elem2 = document.getElementById('cafe-list2');
+            var elem3 = document.getElementById('cafe-list3');
+                    var elem4 = document.getElementById('year1st');
+                  var elem5 = document.getElementById('shsyear');
+                  var elem6 = document.getElementById('clryear1st');
+                  var elem7 = document.getElementById('clrshsyear');
+                  var elem8 = document.getElementById('sectionsched'); 
+                   elem8.style.display = "none";
+                elem1.style.display = "none";
+                elem2.style.display = "block";
+                elem3.style.display = "none";
+                elem4.style.display = "none";
+                elem5.style.display = "none";
+                elem6.style.display = "none";
+                   elem7.style.display = "none";
+              }
+              
+              
+                function btn3()
+              {
+                var elem1 = document.getElementById('cafe-list');
+                var elem2 = document.getElementById('cafe-list2');
+                var elem3 = document.getElementById('cafe-list3');
+                var elem4 = document.getElementById('year1st');
+                var elem5 = document.getElementById('shsyear');
+                  var elem6 = document.getElementById('clryear1st');
+                  var elem7 = document.getElementById('clrshsyear');
+                  var elem8 = document.getElementById('sectionsched'); 
+                   elem8.style.display = "none";
+                elem1.style.display = "none";
+                elem2.style.display = "none";
+                elem3.style.display = "block";
+                elem4.style.display = "none";
+                elem5.style.display = "none";
+                  elem6.style.display = "none";
+                   elem7.style.display = "none";
+    
+              }
+                   function btn4()
+              {
+                var elem1 = document.getElementById('cafe-list');
+                var elem2 = document.getElementById('cafe-list2');
+                var elem3 = document.getElementById('cafe-list3');
+                var elem4 = document.getElementById('year1st');
+                var elem5 = document.getElementById('shsyear');
+                  var elem6 = document.getElementById('clryear1st');
+                  var elem7 = document.getElementById('clrshsyear');
+                  var elem8 = document.getElementById('sectionsched'); 
+                   elem8.style.display = "block";
+                elem1.style.display = "none";
+                elem2.style.display = "none";
+                elem3.style.display = "none";
+                elem4.style.display = "none";
+                elem5.style.display = "none";
+                  elem6.style.display = "none";
+                   elem7.style.display = "none";
+    
+              }
+             function showSHS()
+              {
+                var elem1 = document.getElementById('cafe-list');
+                var elem2 = document.getElementById('cafe-list2');
+                var elem3 = document.getElementById('cafe-list3');
+                var elem4 = document.getElementById('year1st');
+                var elem5 = document.getElementById('shsyear');
+                  var elem6 = document.getElementById('clryear1st');
+                  var elem7 = document.getElementById('clrshsyear');
+                  var elem8 = document.getElementById('sectionsched'); 
+                   elem8.style.display = "none";
+                elem1.style.display = "none";
+                elem2.style.display = "none";
+                elem3.style.display = "none";
+                elem4.style.display = "none";
+                elem5.style.display = "block";
+                  elem6.style.display = "none";
+                   elem7.style.display = "none";
+    
+              }
+             function show1st()
+              {
+                var elem1 = document.getElementById('cafe-list');
+                var elem2 = document.getElementById('cafe-list2');
+                var elem3 = document.getElementById('cafe-list3');
+                var elem4 = document.getElementById('year1st');
+                var elem5 = document.getElementById('shsyear');
+                  var elem6 = document.getElementById('clryear1st');
+                  var elem7 = document.getElementById('clrshsyear');
+                  var elem8 = document.getElementById('sectionsched'); 
+                   elem8.style.display = "none";
+                elem1.style.display = "none";
+                elem2.style.display = "none";
+                elem3.style.display = "none";
+                elem4.style.display = "block";
+                elem5.style.display = "none";
+                  elem6.style.display = "none";
+                   elem7.style.display = "none";
+    
+              }
+                 function showSHS2()
+              {
+                var elem1 = document.getElementById('cafe-list');
+                var elem2 = document.getElementById('cafe-list2');
+                var elem3 = document.getElementById('cafe-list3');
+                var elem4 = document.getElementById('year1st');
+                var elem5 = document.getElementById('shsyear');
+                  var elem6 = document.getElementById('clryear1st');
+                  var elem7 = document.getElementById('clrshsyear');
+                  var elem8 = document.getElementById('sectionsched'); 
+                   elem8.style.display = "none";
+                elem1.style.display = "none";
+                elem2.style.display = "none";
+                elem3.style.display = "none";
+                elem4.style.display = "none";
+                elem5.style.display = "none";
+                  elem6.style.display = "none";
+                   elem7.style.display = "block";
+    
+              }
+                 function show1st2()
+              {
+                var elem1 = document.getElementById('cafe-list');
+                var elem2 = document.getElementById('cafe-list2');
+                var elem3 = document.getElementById('cafe-list3');
+                var elem4 = document.getElementById('year1st');
+                var elem5 = document.getElementById('shsyear');
+                  var elem6 = document.getElementById('clryear1st');
+                  var elem7 = document.getElementById('clrshsyear');
+                  var elem8 = document.getElementById('sectionsched'); 
+                   elem8.style.display = "none";
+                elem1.style.display = "none";
+                elem2.style.display = "none";
+                elem3.style.display = "none";
+                elem4.style.display = "none";
+                elem5.style.display = "none";
+                  elem6.style.display = "block";
+                   elem7.style.display = "none";
+    
+              }
+              
+              
+                   function filterSched1()
+        {
+            var input, filter, table, tr, td, i,sort,sorttemp;
+            sort = document.getElementById("sortBy1");
+            if(sort.value === "ID#")
+                {
+                    sorttemp = 0;
+                }
+            else  if(sort.value === "School Type")
+                {
+                    sorttemp = 1;
+                }
+            else  if(sort.value === "Name")
+                {
+                    sorttemp = 2;
+                }
+            else  if(sort.value === "Address")
+                {
+                    sorttemp = 3;
+                }
+            else  if(sort.value === "E-mail")
+                {
+                    sorttemp = 4;
+                }
+              else  if(sort.value === "Phone")
+                {
+                    sorttemp = 5;
+                }
+            
+            input = document.getElementById("myInput1");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("tableapp");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[sorttemp];
+            if (td) {
+                    if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                    } else {
+                            tr[i].style.display = "none";
+                            }
+                    }       
+  }
+               }
+    
+                      
+                   function filterSched2()
+        {
+            var input, filter, table, tr, td, i,sort,sorttemp;
+            sort = document.getElementById("sortBy2");
+            if(sort.value === "ID#")
+                {
+                    sorttemp = 0;
+                }
+            else  if(sort.value === "Batch")
+                {
+                    sorttemp = 1;
+                }
+            else  if(sort.value === "School Type")
+                {
+                    sorttemp = 2;
+                }
+            else  if(sort.value === "Name")
+                {
+                    sorttemp = 3;
+                }
+       
+            
+            input = document.getElementById("myInput2");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("tableshs");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[sorttemp];
+            if (td) {
+                    if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                    } else {
+                            tr[i].style.display = "none";
+                            }
+                    }       
+            }
+        }
+    
+                        function filterSched3()
+        {
+            var input, filter, table, tr, td, i,sort,sorttemp;
+            sort = document.getElementById("sortBy3");
+            if(sort.value === "ID#")
+                {
+                    sorttemp = 0;
+                }
+            else  if(sort.value === "Batch")
+                {
+                    sorttemp = 1;
+                }
+            else  if(sort.value === "School Type")
+                {
+                    sorttemp = 2;
+                }
+            else  if(sort.value === "Name")
+                {
+                    sorttemp = 3;
+                }
+       
+            
+            input = document.getElementById("myInput3");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("tablecol");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[sorttemp];
+            if (td) {
+                    if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                    } else {
+                            tr[i].style.display = "none";
+                            }
+                    }       
+            }
+        }
+                        function filterSched4()
+        {
+            var input, filter, table, tr, td, i,sort,sorttemp;
+            sort = document.getElementById("sortBy4");
+            if(sort.value === "ID#")
+                {
+                    sorttemp = 0;
+                }
+              else  if(sort.value === "Name")
+                {
+                    sorttemp = 1;
+                }
+            else  if(sort.value === "Section")
+                {
+                    sorttemp = 2;
+                }
+            else  if(sort.value === "College")
+                {
+                    sorttemp = 3;
+                }
+          
+              else  if(sort.value === "Program")
+                {
+                    sorttemp = 4;
+                }
+        else  if(sort.value === "Year")
+                {
+                    sorttemp = 5;
+                }
+             else  if(sort.value === "Phone#")
+                {
+                    sorttemp = 6;
+                }
+            
+            input = document.getElementById("myInput4");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("table1styear");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[sorttemp];
+            if (td) {
+                    if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                    } else {
+                            tr[i].style.display = "none";
+                            }
+                    }       
+            }
+        }
+              
+                          function filterSched5()
+        {
+            var input, filter, table, tr, td, i,sort,sorttemp;
+            sort = document.getElementById("sortBy5");
+            if(sort.value === "ID#")
+                {
+                    sorttemp = 0;
+                }
+              else  if(sort.value === "Name")
+                {
+                    sorttemp = 1;
+                }
+            else  if(sort.value === "Section")
+                {
+                    sorttemp = 2;
+                }
+           
+          
+              else  if(sort.value === "Program")
+                {
+                    sorttemp = 3;
+                }
+        else  if(sort.value === "Year")
+                {
+                    sorttemp = 4;
+                }
+             else  if(sort.value === "Phone#")
+                {
+                    sorttemp = 5;
+                }
+            
+            input = document.getElementById("myInput5");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("tableshsyear");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[sorttemp];
+            if (td) {
+                    if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                    } else {
+                            tr[i].style.display = "none";
+                            }
+                    }       
+            }
+        }     
+              
+                function filterSched6()
+        {
+            var input, filter, table, tr, td, i,sort,sorttemp;
+            sort = document.getElementById("sortBy6");
+             if(sort.value === "ID#")
+                {
+                    sorttemp = 0;
+                }
+              else  if(sort.value === "Name")
+                {
+                    sorttemp = 1;
+                }
+            else  if(sort.value === "Section")
+                {
+                    sorttemp = 2;
+                }
+            else  if(sort.value === "College")
+                {
+                    sorttemp = 3;
+                }
+          
+              else  if(sort.value === "Program")
+                {
+                    sorttemp = 4;
+                }
+        else  if(sort.value === "Year")
+                {
+                    sorttemp = 5;
+                }
+             else  if(sort.value === "Phone#")
+                {
+                    sorttemp = 6;
+                }
+            
+            input = document.getElementById("myInput6");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("tableclr1styear");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[sorttemp];
+            if (td) {
+                    if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                    } else {
+                            tr[i].style.display = "none";
+                            }
+                    }       
+            }
+        }      
+                                function filterSched7()
+        {
+            var input, filter, table, tr, td, i,sort,sorttemp;
+            sort = document.getElementById("sortBy7");
+            if(sort.value === "ID#")
+                {
+                    sorttemp = 0;
+                }
+              else  if(sort.value === "Name")
+                {
+                    sorttemp = 1;
+                }
+            else  if(sort.value === "Section")
+                {
+                    sorttemp = 2;
+                }
+           
+              else  if(sort.value === "Program")
+                {
+                    sorttemp = 3;
+                }
+        else  if(sort.value === "Year")
+                {
+                    sorttemp = 4;
+                }
+             else  if(sort.value === "Phone#")
+                {
+                    sorttemp = 5;
+                }
+            
+            input = document.getElementById("myInput7");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("tableclrshsyear");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[sorttemp];
+            if (td) {
+                    if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                    } else {
+                            tr[i].style.display = "none";
+                            }
+                    }       
+            }
+        }     
+
+                   function subjChange()
+               {
+                   var secselect = document.getElementById("secselect");
+                   var secsubyear = document.getElementById("secsubjyear");
+                   var option1 = document.createElement("option");
+                   var option2 = document.createElement("option");
+                   var option3= document.createElement("option");
+                   var option4= document.createElement("option");
+                   var option5= document.createElement("option");
+               
+                 var option7= document.createElement("option");
+                   
+        if(secselect.value === "ABM" ||
+          secselect.value === "STEM" ||
+          secselect.value === "HUMSS" ||
+          secselect.value === "GA"  )
+            {
+                secsubyear.options.length = 0;
+                option1.text="Grade 11";
+                option2.text="Grade 12";
+        
+                secsubyear.add(option1);
+                secsubyear.add(option2);
+           
+            }
+            else
+            {
+                secsubyear.options.length = 0;
+                option1.text="1st Year";
+                option2.text="2nd Year";
+                option3.text="3rd Year";
+                option4.text="4th Year";
+                option5.text="5th Year";
+                secsubyear.add(option1);
+                secsubyear.add(option2);
+                secsubyear.add(option3);
+                secsubyear.add(option4);
+                secsubyear.add(option5);
+            }
+        }
+              
+             function sectimeout()
+    {
+        var time = document.getElementById('sectime1').value;
+        if(time.length ==1)
+            {
+                document.getElementById('sectime1').value = "0" + time;
+            }
+        if(time > 12)
+            {
+                document.getElementById('sectime1').value  = "09";
+            }
+    }
+                 function sectimeout2()
+    {
+        var time = document.getElementById('sectime2').value;
+        if(time.length ==1)
+            {
+                document.getElementById('sectime2').value = "0" + time;
+            }
+        if(time > 59)
+            {
+                document.getElementById('sectime2').value  = "59";
+            }
+    }
+               function sectimeout4()
+    {
+        var time = document.getElementById('sectime3').value;
+        if(time.length ==1)
+            {
+                document.getElementById('sectime3').value = "0" + time;
+            }
+        if(time > 12)
+            {
+                document.getElementById('sectime3').value  = "09";
+            }
+    }
+        function sectimeout5()
+    {
+        var time = document.getElementById('sectime4').value;
+        if(time.length ==1)
+            {
+                document.getElementById('sectime4').value = "0" + time;
+            }
+        if(time > 59)
+            {
+                document.getElementById('sectime4').value  = "59";
+            }
+    }
+        function uppercase()
+               {
+                   str= document.getElementById('subjdaytxt').value;
+                   str = str.toUpperCase();
+                   document.getElementById('subjdaytxt').value = str;
+               
+               }
+               
+                    function uppercase2()
+               {
+                   str= document.getElementById('subjcodetxt').value;
+                   str = str.toUpperCase();
+                   document.getElementById('subjcodetxt').value = str;
+               
+               }
+            
+function isNumberKey(evt)
+    {
+    var charCode = (evt.which) ? evt.which : event.keyCode
+    if (charCode > 31 && (charCode < 48 || charCode > 57))
+        return false;
+    return true;
+    }
+    
+              function isDayKey(evt)
+    {
+    var charCode = (evt.which) ? evt.which : event.keyCode
+    if (charCode !== 77 && charCode !== 70 && charCode !== 87 && charCode !== 72 && 
+       charCode !== 70 && charCode !== 84 && charCode !== 83 && charCode !== 109 && charCode !== 119 && charCode !== 102 && charCode !== 116 && charCode !== 104 && 
+        charCode !== 115  )
+        {
+        return false;
+            
+        }
+    return true;
+    } 
+  /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+        document.getElementById("myDropdown1").classList.remove('show');
+           document.getElementById("myDropdown2").classList.remove('show');         
+}
+              
+              function myFunction1() {
+    document.getElementById("myDropdown1").classList.toggle("show");
+                      document.getElementById("myDropdown2").classList.remove('show');
+           document.getElementById("myDropdown").classList.remove('show');         
+                  
+}
+                           function myFunction2() {
+                               
+    document.getElementById("myDropdown2").classList.toggle("show");
+        document.getElementById("myDropdown1").classList.remove('show');
+           document.getElementById("myDropdown").classList.remove('show');                  
+                 
+                           }
+              
+                  function subjFunction()
+               { 
+                   var year = document.getElementById("secsubjyear").value;
+                   var sem = document.getElementById("secsubjsem").value;
+                   var section = document.getElementById("secselect").value;
+                   var yearsem = document.getElementById("subjyearsem").value;
+                   var subjname = document.getElementById("subjnametxt").value;
+                   var subjcode= document.getElementById("subjcodetxt").value;
+                   var subjunit = document.getElementById("subjunittxt").value;
+                   var subjtime = document.getElementById("sectime1").value +":"+
+                             document.getElementById("sectime2").value + 
+                                  document.getElementById("sectimeAMPM").value
+                         +"-" + document.getElementById("sectime3").value +":"+
+                             document.getElementById("sectime4").value + 
+                                  document.getElementById("sectimeAMPM2").value;
+                   var subjroom = document.getElementById("subjroomtxt").value;
+                   var subjday = document.getElementById("subjdaytxt").value; 
+                   var code;
+                   if( subjname === "" || subjcode === "" || subjunit === "" ||  subjroom === "" || subjday === "" || section === "" )
+                       {
+                        
+                           alert("Please Complete all Fields")
+                       }
+                   else
+                       {
+                           
+                    
+                    db.collection("courses").get()
+                        .then(function(querySnapshot) {
+                        querySnapshot.forEach(function(doc) {
+                            if(section === doc.data().sectioncode)
+                        code = doc.data().progcode;
+                        });
+                       
+                   
+                        db.collection("subjects").doc(section+yearsem+subjcode).set({
+                        name: subjname,
+                        code: subjcode,
+                        day: subjday,
+                        year: year,
+                        room: subjroom,
+                        time: subjtime,
+                        section: section+"-"+yearsem,
+                        sem: sem,
+                        unit:subjunit 
+            
+            });
+                        alert("Added Successfully");
+                       
+                    });
+          
+                       }
+               }
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown1 = document.getElementById("myDropdown1");
+      var myDropdown2 = document.getElementById("myDropdown2");
+        var myDropdown = document.getElementById("myDropdown");
+         if(myDropdown1.classList.contains('show') || myDropdown.classList.contains('show') || myDropdown2.classList.contains('show')  ) {
+         
+             myDropdown1.classList.remove('show');
+             myDropdown2.classList.remove('show');
+             myDropdown.classList.remove('show');
+      }
+ 
+
+  
+  }
+}
+        </script>
+    </body>
+</html>
+
